@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --configuration production --base-href /HunWeb/
+        run: npm run build -- --configuration production
 
       - name: Copy index.html to 404.html
         run: cp dist/HunWeb/browser/index.html dist/HunWeb/browser/404.html
